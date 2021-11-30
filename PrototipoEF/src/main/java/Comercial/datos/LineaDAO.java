@@ -15,7 +15,7 @@ import javax.swing.JOptionPane;
 
 /**
  *
- * @author SIPAQUE.RITA
+ * @author 
  */
 public class LineaDAO {
     

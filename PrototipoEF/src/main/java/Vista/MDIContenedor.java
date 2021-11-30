@@ -25,7 +25,7 @@ import seguridad.dominio.Bitacora;
  */
 public class MDIContenedor extends javax.swing.JFrame {
 private Mantenimiento_Bodega Mantenimiento_Bodega;
- 
+private Mantenimiento_Producto Mantenimiento_Producto; 
     private FmrBitacora FmrBitacora;
    
     
@@ -74,8 +74,6 @@ private Mantenimiento_Bodega Mantenimiento_Bodega;
         M_ccompras = new javax.swing.JMenu();
         M_inventario = new javax.swing.JMenu();
         Item_Mntbodega = new javax.swing.JCheckBoxMenuItem();
-        Item_marca = new javax.swing.JCheckBoxMenuItem();
-        Item_Linea = new javax.swing.JCheckBoxMenuItem();
         Item_Mntproducto = new javax.swing.JMenuItem();
         jMenu12 = new javax.swing.JMenu();
         jMenu13 = new javax.swing.JMenu();
@@ -87,10 +85,10 @@ private Mantenimiento_Bodega Mantenimiento_Bodega;
         cerrar_sesion = new javax.swing.JMenu();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setTitle("Sistema Hotelero");
+        setTitle("SANTIAGO MARTINEZ DIAZ 9959-19-13847");
         setResizable(false);
 
-        jdpescritorio.setBackground(new java.awt.Color(0, 153, 153));
+        jdpescritorio.setBackground(new java.awt.Color(153, 255, 153));
 
         jMenuBar1.setBackground(new java.awt.Color(255, 255, 255));
 
@@ -111,24 +109,6 @@ private Mantenimiento_Bodega Mantenimiento_Bodega;
             }
         });
         M_inventario.add(Item_Mntbodega);
-
-        Item_marca.setSelected(true);
-        Item_marca.setText("Mantenimiento Marca");
-        Item_marca.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Item_marcaActionPerformed(evt);
-            }
-        });
-        M_inventario.add(Item_marca);
-
-        Item_Linea.setSelected(true);
-        Item_Linea.setText("Mantenimiento Linea");
-        Item_Linea.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Item_LineaActionPerformed(evt);
-            }
-        });
-        M_inventario.add(Item_Linea);
 
         Item_Mntproducto.setText("Mantenimiento Producto");
         Item_Mntproducto.addActionListener(new java.awt.event.ActionListener() {
@@ -196,7 +176,7 @@ private Mantenimiento_Bodega Mantenimiento_Bodega;
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jdpescritorio, javax.swing.GroupLayout.DEFAULT_SIZE, 1366, Short.MAX_VALUE)
+            .addComponent(jdpescritorio, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 1366, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -247,12 +227,18 @@ private Mantenimiento_Bodega Mantenimiento_Bodega;
     }//GEN-LAST:event_cerrar_sesionMouseClicked
 
     private void Item_MntproductoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Item_MntproductoActionPerformed
-
-
+        Mantenimiento_Producto = new Mantenimiento_Producto();
+        jdpescritorio.add(Mantenimiento_Producto);
+        Dimension desktopSize = jdpescritorio.getSize();
+        Dimension FrameSize = Mantenimiento_Producto.getSize();
+        Mantenimiento_Producto.setLocation((desktopSize.width - FrameSize.width) / 2, (desktopSize.height - FrameSize.height) / 2);
+        Mantenimiento_Producto.show();
+        logo.setVisible(true);
+        Mantenimiento_Producto.setVisible(true);
     }//GEN-LAST:event_Item_MntproductoActionPerformed
 
     private void Item_MntbodegaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Item_MntbodegaActionPerformed
-     Mantenimiento_Bodega = new Mantenimiento_Bodega();
+        Mantenimiento_Bodega = new Mantenimiento_Bodega();
         jdpescritorio.add(Mantenimiento_Bodega);
         Dimension desktopSize = jdpescritorio.getSize();
         Dimension FrameSize = Mantenimiento_Bodega.getSize();
@@ -260,19 +246,7 @@ private Mantenimiento_Bodega Mantenimiento_Bodega;
         Mantenimiento_Bodega.show();
         logo.setVisible(true);
         Mantenimiento_Bodega.setVisible(true);
-
     }//GEN-LAST:event_Item_MntbodegaActionPerformed
-
-    private void Item_marcaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Item_marcaActionPerformed
-        // TODO add your handling code here:
-
-    }//GEN-LAST:event_Item_marcaActionPerformed
-
-    private void Item_LineaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Item_LineaActionPerformed
-        // TODO add your handling code here:
-
-
-    }//GEN-LAST:event_Item_LineaActionPerformed
 
     /**
      * @param args the command line arguments
@@ -298,12 +272,10 @@ private Mantenimiento_Bodega Mantenimiento_Bodega;
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JCheckBoxMenuItem Item_Linea;
     private javax.swing.JCheckBoxMenuItem Item_Mntbodega;
-    public static javax.swing.JMenuItem Item_Mntproducto;
-    private javax.swing.JCheckBoxMenuItem Item_marca;
+    private javax.swing.JMenuItem Item_Mntproducto;
     public static javax.swing.JMenu M_ccompras;
-    public static javax.swing.JMenu M_inventario;
+    private javax.swing.JMenu M_inventario;
     public static javax.swing.JMenu cerrar_sesion;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu11;

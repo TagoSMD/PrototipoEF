@@ -14,7 +14,7 @@ import java.util.List;
 import javax.swing.JOptionPane;
 /**
  *
- * @author SipaqueRitaMaria
+ * @author 
  */
 public class MarcaDAO {
     private static final String SQL_SELECT = "SELECT PK_codigo_marca, nombre_marca,  estatus_marca FROM tbl_marca";

@@ -18,7 +18,7 @@ import javax.swing.JOptionPane;
 
 /**
  *
- * @author Diana
+ * @author 
  */
 public class ProductoDAO {
 

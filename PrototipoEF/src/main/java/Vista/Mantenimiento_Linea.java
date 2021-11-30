@@ -20,7 +20,7 @@ import java.util.Map;
 
 /**
  *
- * @author SipaqueRitaMaria
+ * @author 
  */
 public class Mantenimiento_Linea extends javax.swing.JInternalFrame {
 

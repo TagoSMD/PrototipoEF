@@ -16,7 +16,7 @@ import javax.swing.JOptionPane;
 
 /**
  *
- * @author Diana
+ * @author 
  */
 public class BodegaDAO {
 

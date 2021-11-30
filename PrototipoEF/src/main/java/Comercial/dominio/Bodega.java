@@ -7,7 +7,7 @@ package Comercial.dominio;
 
 /**
  *
- * @author Diana
+ * @author 
  */
 public class Bodega {
 

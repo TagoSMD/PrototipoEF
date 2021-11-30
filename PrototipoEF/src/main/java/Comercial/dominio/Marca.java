@@ -7,7 +7,7 @@ package Comercial.dominio;
 
 /**
  *
- * @author SipaqueRitaMaria
+ * @author 
  */
 public class Marca {
 String PK_codigo_Marca;

@@ -216,7 +216,7 @@ public class GenerarPermisos {
                 ejecutarPermisos.ejecutarBusqueda(usuario);
                // MDIContenedor.M_venta.setVisible(false);
                // MDIContenedor.M_compras.setVisible(false);
-                MDIContenedor.M_inventario.setVisible(false);
+               // MDIContenedor.M_inventario.setVisible(false);
                 //MDIContenedor.P_ventas.setVisible(true);
                 //MDIContenedor.P_compras.setVisible(false);
                  //MDIContenedor.P_pedido_factura.setVisible(true);
@@ -226,7 +226,7 @@ public class GenerarPermisos {
                     if (varApp >= 3000 && varApp <= 3360) {
                        // MDIContenedor.M_venta.setVisible(true);
                        // MDIContenedor.M_compras.setVisible(true);
-                        MDIContenedor.M_inventario.setVisible(true);
+                    //    MDIContenedor.M_inventario.setVisible(true);
                         //MDIContenedor.P_ventas.setVisible(true);
                         //MDIContenedor.P_compras.setVisible(true);
                         //    MDIComercial.ProcesoInventario.setVisible(true);

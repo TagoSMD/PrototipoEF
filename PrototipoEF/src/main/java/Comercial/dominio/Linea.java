@@ -7,7 +7,7 @@ package Comercial.dominio;
 
 /**
  *
- * @author SipaqueRitaMaria
+ * @author 
  */
 public class Linea {
     

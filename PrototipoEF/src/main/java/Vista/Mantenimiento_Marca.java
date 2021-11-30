@@ -21,7 +21,7 @@ import java.util.Map;
 
 /**
  *
- * @author SipaqueRitaMaria
+ * @author 
  */
 public class Mantenimiento_Marca extends javax.swing.JInternalFrame {
 

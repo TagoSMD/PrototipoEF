@@ -31,7 +31,7 @@ import javax.swing.table.DefaultTableModel;
 
 /**
  *
- * @author Diana
+ * @author 
  */
 public class Mantenimiento_Producto extends javax.swing.JInternalFrame {
 

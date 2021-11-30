@@ -20,7 +20,7 @@ import javax.swing.table.DefaultTableModel;
 
 /**
  *
- * @author Diana
+ * @author 
  */
 public class Mantenimiento_Bodega extends javax.swing.JInternalFrame {
 
