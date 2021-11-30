@@ -39,7 +39,7 @@ public class Mantenimiento_Bodega extends javax.swing.JInternalFrame {
         String[] dato = new String[3];
         for (int i = 0; i < bodega.size(); i++) {
             
-            dato[0] = Integer.toString(bodega.get(i).getPKcodigoBodega());
+            dato[0] = bodega.get(i).getCodigo_bodega();
             dato[1] = bodega.get(i).getNombreBodega();
             dato[2] = bodega.get(i).getEstatusBodega();
 
@@ -51,7 +51,7 @@ public class Mantenimiento_Bodega extends javax.swing.JInternalFrame {
     public void buscar() {
         Bodega bodegaAConsultar = new Bodega();
         BodegaDAO bodegaDAO = new BodegaDAO();
-        bodegaAConsultar.setPKcodigoBodega(Integer.parseInt(Txt_id.getText()));
+        bodegaAConsultar.setCodigo_bodega(Txt_id.getText());
         
         bodegaAConsultar = bodegaDAO.query(bodegaAConsultar);
         Txt_nombre.setText(bodegaAConsultar.getNombreBodega());
@@ -317,7 +317,7 @@ public class Mantenimiento_Bodega extends javax.swing.JInternalFrame {
         BodegaDAO bodegaDAO = new BodegaDAO();
         Bodega bodegaAInsertar = new Bodega();
         //String cbxbodega = cbx_bodega.getSelectedItem().toString();
-        bodegaAInsertar.setPKcodigoBodega((int) Integer.parseInt(Txt_id.getText()));
+        bodegaAInsertar.setCodigo_bodega(Txt_id.getText());
        bodegaAInsertar.setNombreBodega(Txt_nombre.getText());
         bodegaAInsertar.setEstatusBodega(Txt_estatus.getText());
         bodegaDAO.insert(bodegaAInsertar);
@@ -355,7 +355,7 @@ public class Mantenimiento_Bodega extends javax.swing.JInternalFrame {
         BodegaDAO bodegaDAO = new BodegaDAO();
         Bodega bodegaAActualizar = new Bodega();
         ;
-        bodegaAActualizar.setPKcodigoBodega(Integer.parseInt(Txt_id.getText()));
+        bodegaAActualizar.setCodigo_bodega(Txt_id.getText());
         bodegaAActualizar.setNombreBodega(Txt_nombre.getText());
         bodegaAActualizar.setEstatusBodega(Txt_estatus.getText());
         bodegaDAO.update(bodegaAActualizar);
@@ -391,7 +391,7 @@ public class Mantenimiento_Bodega extends javax.swing.JInternalFrame {
         // TODO add your handling code here:
         BodegaDAO bodegaDAO = new BodegaDAO();
         Bodega bodegaAEliminar = new Bodega();
-        bodegaAEliminar.setPKcodigoBodega(Integer.parseInt(Txt_id.getText()));
+        bodegaAEliminar.setCodigo_bodega(Txt_id.getText());
         
         bodegaDAO.delete(bodegaAEliminar);
         JOptionPane.showMessageDialog(null, "Registro Eliminado.");

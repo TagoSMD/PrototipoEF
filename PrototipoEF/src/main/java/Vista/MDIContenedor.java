@@ -24,7 +24,7 @@ import seguridad.dominio.Bitacora;
  *
  */
 public class MDIContenedor extends javax.swing.JFrame {
-
+private Mantenimiento_Bodega Mantenimiento_Bodega;
  
     private FmrBitacora FmrBitacora;
    
@@ -252,7 +252,14 @@ public class MDIContenedor extends javax.swing.JFrame {
     }//GEN-LAST:event_Item_MntproductoActionPerformed
 
     private void Item_MntbodegaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Item_MntbodegaActionPerformed
-
+     Mantenimiento_Bodega = new Mantenimiento_Bodega();
+        jdpescritorio.add(Mantenimiento_Bodega);
+        Dimension desktopSize = jdpescritorio.getSize();
+        Dimension FrameSize = Mantenimiento_Bodega.getSize();
+        Mantenimiento_Bodega.setLocation((desktopSize.width - FrameSize.width) / 2, (desktopSize.height - FrameSize.height) / 2);
+        Mantenimiento_Bodega.show();
+        logo.setVisible(true);
+        Mantenimiento_Bodega.setVisible(true);
 
     }//GEN-LAST:event_Item_MntbodegaActionPerformed
 
